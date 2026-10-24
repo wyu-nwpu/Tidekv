@@ -1,0 +1,26 @@
+# Main runtime: Python 3.10, PyTorch CUDA 11.8.
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.3.1+cu118
+transformers==4.44.2
+tokenizers==0.19.1
+accelerate==1.10.0
+numpy==2.1.2
+huggingface-hub==0.36.2
+safetensors==0.6.2
+sentencepiece==0.2.1
+einops==0.8.1
+tqdm==4.67.1
+tenacity==9.1.4
+PyYAML==6.0.2
+scipy==1.15.3
+rouge==1.0.1
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.27.1
+nltk==3.9.1
+wonderwords==3.0.1
+html2text==2025.4.15
+beautifulsoup4==4.14.3
+packaging==25.0
+ninja==1.13.0
+wheel==0.45.1
+# FlashAttention version: envs/requirements-flash.txt.

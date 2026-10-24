@@ -1,0 +1,31 @@
+backends:
+  - method: kivi
+    source:
+      kind: archive
+      revision: 876b4d2d08e3b1d5f70d0969c299d8c7c42ddfb6
+      path: baseline/kivi
+      license: MIT
+    python: conda:tidekv-kivi
+    adapter: baseline/adapters/run_kivi.py
+    config_id: k2_v2_g32_r32
+
+  - method: headinfer
+    source:
+      kind: archive
+      revision: b57e449f3c0709739d812134649fdae7d1ca6a9f
+      path: baseline/headinfer
+      license: MIT
+    python: conda:tidekv-headinfer
+    adapter: baseline/adapters/run_headinfer.py
+    config_id: exact_offload_ordered
+
+  - method: keydiff
+    source:
+      kind: local_git
+      revision: 4f59c6d7
+      path: baseline/keydiff/bpp
+      source_commit: 4f59c6d7b3a2ea0ab214d089e11dc1a64f73dd71
+      license: unspecified
+    python: conda:tidekv-keydiff
+    adapter: baseline/adapters/run_keydiff.py
+    config_id: n4096_b128_raw_mean

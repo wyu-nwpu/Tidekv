@@ -1,0 +1,9 @@
+name: readkv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - setuptools
+  - wheel
+# Runtime dependencies are listed in requirements.txt and requirements-flash.txt.

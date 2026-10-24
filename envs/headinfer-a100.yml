@@ -1,0 +1,19 @@
+name: tidekv-headinfer
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.4.1
+  - pytorch-cuda=12.4
+  - pip
+  - ninja
+  - packaging
+  - pip:
+      - transformers==4.45.2
+      - accelerate==0.34.2
+      - sentencepiece==0.2.0
+      - safetensors==0.4.5
+      - pyyaml==6.0.2

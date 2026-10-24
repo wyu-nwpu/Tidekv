@@ -1,0 +1,17 @@
+name: tidekv-keydiff
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.4.1
+  - pytorch-cuda=12.4
+  - pip
+  - pip:
+      - transformers==4.44.2
+      - accelerate==0.33.0
+      - sentencepiece==0.2.0
+      - safetensors==0.4.4
+      - pyyaml==6.0.2
